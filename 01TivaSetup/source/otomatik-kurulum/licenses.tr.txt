@@ -1,0 +1,20 @@
+TIVA SETUP — LİSANS AÇIKLAMASI
+
+Tiva Setup bağımsız bir kurulum aracıdır. Texas Instruments'ın ürünü değildir.
+
+Code Composer Studio 12.8.1, TI ve üçüncü taraf yazılımlarını içerir.
+Yazılım manifestinde ilgili telif bildirimleri ve lisans koşulları bulunur.
+
+TivaWare 2.2.0.295, DriverLib ve örnek kodları sağlar.
+EULA ve TI BSD lisansı Özgün lisans metinleri sekmesindedir.
+
+ICDI sürücüsü ve LM Flash Programmer'ın lisans dosyaları özgün kurulum
+arşivlerinde korunur. Kullanımlarında bu koşullar da geçerlidir.
+
+Üreticinin özgün kurulum paketleri değiştirilmeden gömülür.
+Her bileşenin kullanımı kendi lisans koşullarına tabidir.
+Bu açıklama, lisans koşullarının yerine geçmez.
+
+CCS manifesti ve TivaWare lisanslarını okumak için Özgün lisans
+metinleri sekmesini açın. Üretici metinleri zaten İngilizcedir;
+arayüz dilini değiştirdiğinizde özgün ifadeleri korunur.

@@ -1,0 +1,5 @@
+/indirilenler/
+/output/
+/otomatik-kurulum/build/
+*.user
+*.suo

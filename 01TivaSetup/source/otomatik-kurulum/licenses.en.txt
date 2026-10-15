@@ -1,0 +1,20 @@
+TIVA SETUP — LICENSE OVERVIEW
+
+Tiva Setup is an independent setup tool. It is not a Texas Instruments product.
+
+Code Composer Studio 12.8.1 includes TI and third-party software.
+Its software manifest lists the corresponding copyright notices and terms.
+
+TivaWare 2.2.0.295 supplies DriverLib and example code.
+Its EULA and TI BSD license are included in Original license texts.
+
+ICDI drivers and LM Flash Programmer retain their license files in the
+original installer archives. Those terms also apply to their use.
+
+The original vendor installers are embedded without modification.
+Use of each component is governed by its applicable license.
+This overview is explanatory and does not replace those terms.
+
+Open the Original license texts tab to read the CCS manifest and
+TivaWare licenses. These vendor texts are already in English;
+their wording is preserved when you switch the interface language.

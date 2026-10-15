@@ -1,0 +1,60 @@
+TIVA SETUP 3.4
+
+One file to share: TivaSetup-3.4.exe. All four installers are embedded.
+Run it from your PC or USB drive. The full package needs no TI login.
+
+1. Run the EXE. Windows asks for administrator access when setup starts.
+2. Select > tick CCS families > Done. TM4C123 selects only TM4C.
+3. Read Tools > Licenses and accept the checkbox.
+4. Select Start setup, or Continue without board.
+
+WITHOUT A BOARD
+Software, drivers and the DriverLib RGB project are prepared and built.
+Later, connect one EK-TM4C123GXL to DEBUG USB; POWER SELECT = DEBUG.
+Select Flash board. The prepared project is remembered after closing.
+Before every flash, the existing 256 KB program is backed up.
+Flashing stops if the backup or processor identity check fails.
+
+WHAT IS INSTALLED?
+- CCS 12.8.1: code editor, project tools and debugger.
+- TI ARM 20.2.7.LTS: compiler supplied with CCS.
+- ICDI driver: Windows access to the board's DEBUG USB interface.
+- TivaWare 2.2.0.295: DriverLib functions and board examples.
+- LM Flash Programmer 1.0.1588: an alternative programming tool.
+
+CCS: C:\ti\ccs1281\ccs
+Workspace: C:\ti\workspace_tm4c_ccs1281
+TivaWare: C:\ti\TivaWare_C_Series-2.2.0.295
+Desktop shortcut: Tiva Setup - CCS
+
+Family choices apply to a new CCS installation. Automatic RGB project
+creation and flashing are specifically for TM4C123GH6PM / EK-TM4C123GXL.
+Existing CCS 8 and previously edited projects are preserved.
+Existing CCS is always skipped, including when other families are selected.
+Add missing support manually with your existing CCS installer.
+TM4C is optional; without it, TM4C software and RGB steps are skipped.
+
+Tools contains Open CCS, Logs and backups, Licenses and Quick guide.
+Use the moon / sun button at the top right for light / dark mode.
+The theme is remembered and applies to help and license windows.
+Click TR / EN at the bottom right to change the language.
+The language is saved. Vendor license texts remain in their original form.
+Installer and Windows diagnostics may use their own language.
+
+CCS setup may take many minutes. A waiting message appears each minute.
+Stop takes effect after the current installer completes.
+Close CCS if it is using this application's workspace.
+
+TivaSetupLite-3.4.exe has no embedded installers. It checks local files,
+USB and cache, then offers downloads from official TI sources.
+Public downloads start together. For TivaWare, sign in with your own
+TI account and complete the personal form in the browser.
+
+Windows 10/11 x64 with built-in .NET Framework. No Python required.
+Independent tool; not an official Texas Instruments product.
+Original TI packages and license terms are preserved.
+
+Official download pages:
+https://www.ti.com/tool/download/CCSTUDIO/12.8.1
+https://www.ti.com/tool/download/SW-TM4C/2.2.0.295
+https://www.ti.com/tool/SW-EK-TM4C123GXL

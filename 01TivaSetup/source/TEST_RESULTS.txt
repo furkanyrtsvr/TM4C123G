@@ -1,0 +1,115 @@
+TIVA SETUP 3.4 — EXISTING INSTALLATIONS / OPTIONAL TM4C
+Date: 2026-10-03 (Europe/Istanbul)
+Full EXE: TivaSetup-3.4.exe, 1549503524 bytes.
+SHA-256: dc7ecad21d72263f418755fddeb28d3eff2a5f6cc3049f4580ea169dfd774313
+
+PASS: final C# compilation and full EXE embedded package verification, exit code 0.
+PASS: final full EXE self-test and localization test, exit code 0.
+PASS: final full EXE setup-plan test: TM4C, C2000 and all-family selections
+      schedule zero installers on this PC (CCS, ICDI, TivaWare and LM present).
+PASS: final full EXE existing-CCS test: C2000-only run completes without
+      launching installer/build/flash processes or requiring TM4C software.
+PASS: actual DriverLib project preparation with --all-devices: existing
+      CCS/TivaWare/ICDI/LM skipped; ARM project build passed; no flash writes.
+PASS: TM4C is no longer injected into custom selections; empty choices
+      survive elevation arguments and cannot produce an all-family installer command.
+PASS: native UI TM4C checkbox can be unticked; empty selection shown.
+PASS: right-hand TM4C123 shortcut clears the other family selections.
+PASS: final full EXE main window, family list and shortcut in dark/light themes.
+PASS: TR/EN labels, explanatory text and disabled RGB checkbox in non-TM4C mode.
+
+CCS family expansion no longer automatically invokes the installer.
+Existing CCS 12.8.1 is reused independently of selected families or family markers.
+Detection checks C:/ti and Windows uninstall registrations for compatible 12.8.1.
+If an existing CCS lacks TM4C/compiler support, a clear error stops the RGB flow
+without reinstalling CCS. Add missing components manually with its installer.
+No software was installed and no board was flashed during these checks.
+Fresh custom non-TM4C installation and detection at a custom registry path
+have not been tested on a separate clean PC.
+
+Earlier validation:
+TIVA SETUP 3.3 — DISABLED TEXT / FAMILY SELECTION VALIDATION
+Date: 2026-10-03 (Europe/Istanbul)
+Full EXE: TivaSetup-3.3.exe, 1549492260 bytes.
+SHA-256: 02789edc0c49ca4bcb388d4518ed8c62e5d0af33890c451c37a681389bf50c3e
+
+PASS: Windows .NET Framework C# compilation.
+PASS: final full EXE --verify: all four embedded installer hashes, exit code 0.
+PASS: final full EXE --self-test: archive paths, MSI/Windows arguments,
+      default/all/custom CCS selections, duplicate/invalid IDs and elevation restoration.
+PASS: final full EXE --localization-test, exit code 0.
+PASS: 20 family IDs match the CCS 12.8.1 installer product-family list
+      and product-family packages in the verified offline distribution.
+PASS: disabled RGB/license text and glyphs remain readable in dark/light busy preview.
+PASS: custom selection, partial/select-all state, Done, Escape and keyboard Space.
+PASS: final full EXE family list and main window follow light/dark mode.
+PASS: final full EXE TR/EN updates Select, Select all, Done and required-TM4C note.
+PASS: SDK hashes/licenses now read from the verified distribution; no installed SDK needed to build.
+
+No installers were launched and no board was flashed during this revision.
+The busy preview uses the same choice-disable method as real setup.
+Custom multi-family installation and expansion were not actually rerun.
+Existing project creation, backup and flash behavior are unchanged.
+Family selections affect CCS support; the automatic RGB flow targets TM4C123GH6PM.
+
+Earlier validation:
+TIVA SETUP 3.2 — THEMED TEXT / TAB VALIDATION
+Date: 2026-10-03 (Europe/Istanbul)
+Full EXE: TivaSetup.exe, 1549482020 bytes.
+SHA-256: 3bd135a6ab7cd5977266b90217ca331a3b367848cf165025a2a3ba04239984bc
+
+PASS: C# compilation with the Windows .NET Framework compiler.
+PASS: final full EXE embedded installer verification (--verify), exit code 0.
+PASS: short main-window text has no unnecessary scrollbar.
+PASS: dark license overview has no white tab band, frame or native scrollbar.
+PASS: long original license text has a themed thumb; dragging changes the visible text.
+PASS: mouse wheel changes the visible text in the final full EXE.
+PASS: Ctrl+End reaches the end of the original vendor license text.
+PASS: native text selection by mouse remains available.
+PASS: switching to light mode and back updates text-panel colors.
+
+Installer/project/flash behavior is retained. No software was reinstalled
+and no board was flashed during this visual revision.
+
+Earlier validation:
+TIVA SETUP 3.1 — LOGO / THEME VALIDATION
+Date: 2026-10-03 (Europe/Istanbul)
+Full EXE: TivaSetup.exe, 1549475876 bytes.
+SHA-256: 99f95acacbc91533061dc4e089ff72217c9301fd5c556e99635c9f2170efdf34
+
+PASS: Windows .NET Framework C# compilation.
+PASS: final full EXE embedded installer verification (--verify), exit code 0.
+PASS: original chip logo in the EXE icon, title bar and header.
+PASS: moon / sun button toggles light and dark themes.
+PASS: saved dark preference restored after closing and reopening.
+PASS: light/dark main window; dark dropdown hover; EN/TR switching in dark mode.
+PASS: license text and tab labels remain readable in dark mode.
+PASS: Windows 11 title bar follows the selected theme.
+PASS: English Quick guide uses the dark theme.
+
+Existing installer arguments, DriverLib project and flash behavior are retained.
+No software was reinstalled and no board was flashed for this visual revision.
+
+Earlier validation:
+TIVA SETUP 3.0 — VALIDATION
+
+Date: 2026-10-03 (Europe/Istanbul)
+Full EXE: TivaSetup.exe, 1549394468 bytes.
+SHA-256: 92577185ce65f3c8416b889892c9309a7b6ccb30791f8dc3eae4575d3c120b87
+
+PASS: C# compilation with the Windows .NET Framework compiler.
+PASS: all four embedded original installer SHA-256 hashes (--verify).
+PASS: archive path checks, Windows/MSI argument encoding, CCS family options (--self-test).
+PASS: dynamic English diagnostics, unchanged file paths, Turkish restoration, bilingual help and license resources (--localization-test).
+PASS: real DriverLib project build in CCS 12.8.1 without flashing (--prepare-test).
+PASS: native TR/EN switching; visible log text changes with the language.
+PASS: saved language preference reused by the full EXE after the Lite UI test.
+PASS: EN/TR interface layouts; Tools menu; license overview in both languages;
+      original English vendor license tab; English Quick guide.
+
+Version 3.0 retains CCS/TivaWare/ICDI/LM install arguments, project generation,
+flash backup and programming behavior. Existing workspace/state/cache/backups remain compatible.
+No installers were rerun and no board was flashed during this presentation revision.
+Previous version: real CCS 12.8.1 TM4C-only installation, project build,
+256 KB flash backup and subsequent real-board programming passed on this PC.
+Fully clean Windows installation and all-family installation remain unverified.

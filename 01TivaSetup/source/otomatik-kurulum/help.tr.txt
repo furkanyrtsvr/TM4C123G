@@ -1,0 +1,60 @@
+TIVA SETUP 3.4
+
+Paylaşılacak tek dosya: TivaSetup-3.4.exe. Dört kurulum paketi içindedir.
+Bilgisayardan veya USB'den çalışır. Tam paket TI girişi gerektirmez.
+
+1. EXE'yi açın. Kurulum başlarken Windows yönetici izni ister.
+2. Seç menüsünde aileleri işaretleyin. TM4C123 düğmesi yalnız TM4C seçer.
+3. Araçlar > Lisanslar'ı okuyup kabul kutusunu işaretleyin.
+4. Kurulumu başlat veya Kartsız devam et'e basın.
+
+KART OLMADAN
+Yazılımlar, sürücü ve DriverLib RGB projesi hazırlanır ve derlenir.
+Sonra tek bir EK-TM4C123GXL'yi DEBUG USB'den bağlayın.
+POWER SELECT = DEBUG olsun. Karta yükle düğmesine basın.
+Hazırlanmış proje uygulamayı kapatsanız da hatırlanır.
+Her yüklemeden önce mevcut programın 256 KB yedeği alınır.
+Yedek veya işlemci kimliği doğrulanamazsa karta yazılmaz.
+
+NE KURULUR?
+- CCS 12.8.1: kod düzenleme, proje ve hata ayıklama ortamı.
+- TI ARM 20.2.7.LTS: CCS içindeki derleyici.
+- ICDI sürücüsü: kartın DEBUG USB bağlantısını Windows'ta kullanmak için.
+- TivaWare 2.2.0.295: DriverLib işlevleri ve kart örnekleri.
+- LM Flash Programmer 1.0.1588: alternatif programlama aracı.
+
+CCS: C:\ti\ccs1281\ccs
+Proje alanı: C:\ti\workspace_tm4c_ccs1281
+TivaWare: C:\ti\TivaWare_C_Series-2.2.0.295
+Masaüstü kısayolu: Tiva Setup - CCS
+
+Aile seçimi yeni CCS kurulumuna uygulanır. Otomatik RGB
+projesi ve karta yükleme TM4C123GH6PM / EK-TM4C123GXL içindir.
+Kurulu CCS, seçim değişse de yeniden kurulmaz. Eksik desteği mevcut
+CCS yükleyicisiyle kendiniz ekleyin. TM4C zorunlu değildir; seçilmezse
+TM4C yazılımları ve RGB adımları atlanır. Eski projeler korunur.
+
+Araçlar menüsü: CCS'yi aç, Kayıtlar ve yedekler, Lisanslar, Kullanım rehberi.
+Sağ üstteki ay / güneş düğmesiyle gece / gündüz modunu seçin.
+Tema kaydedilir; yardım ve lisans pencerelerine de uygulanır.
+Sağ alttaki TR / EN yazılarına tıklayın. Dil seçiminiz kaydedilir.
+Üretici lisansları özgün biçimde tutulur; açıklamaları iki dillidir.
+Windows ve üretici yükleyicilerinin günlükleri kendi dillerinde olabilir.
+
+CCS kurulumu uzun sürebilir. Her dakika bekleme mesajı görünür.
+Durdur, devam eden yükleyici tamamlanınca etkili olur.
+Bu uygulamanın çalışma alanı CCS'de açıksa CCS'yi kapatın.
+
+TivaSetupLite-3.4.exe kurulum paketlerini içermez. Yerel dosyaları, USB'yi
+ve önbelleği arar; eksikler için resmî TI indirmelerini teklif eder.
+Açık indirmeler birlikte başlar. TivaWare için kendi TI hesabınızla
+giriş yapıp kişisel formu tarayıcıda tamamlayın.
+
+Windows 10/11 x64 ve yerleşik .NET Framework içindir. Python gerekmez.
+Texas Instruments'ın resmî ürünü değildir.
+Özgün TI paketleri ve lisans koşulları korunur.
+
+Resmî indirme sayfaları:
+https://www.ti.com/tool/download/CCSTUDIO/12.8.1
+https://www.ti.com/tool/download/SW-TM4C/2.2.0.295
+https://www.ti.com/tool/SW-EK-TM4C123GXL

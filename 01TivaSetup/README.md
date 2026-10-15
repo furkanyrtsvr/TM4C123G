@@ -2,9 +2,9 @@
 
 Texas Instruments **Tiva C TM4C123G LaunchPad (EK-TM4C123GXL)** kartını kullanmaya başlamak için geliştirilmiş bir Windows kurulum uygulamasıdır. Gerekli yazılımları ve ayarları tek yerde toplayarak kartı programlamaya hazır hâle getirir.
 
-![Tiva Setup özellik özeti](docs/images/tiva-setup-overview.svg)
+![Tiva Setup 3.4 gece teması](source/assets/TivaSetup-Dark.jpg)
 
-*Görsel, uygulama sahibinin verdiği özelliklerden hazırlanan tanıtım özetidir; uygulamadan alınmış ekran görüntüsü değildir.*
+*Gerçek uygulama görüntüsü, kullanıcı tarafından sağlanan kaynak arşivinden alınmıştır.*
 
 ## İndir
 
@@ -26,7 +26,7 @@ Diğer aygıt aileleri için CCS kurulumu seçilebilir. Otomatik örnek proje, d
 
 ## Başlamadan önce
 
-- Windows bilgisayar kullanın. Desteklenen Windows sürümü, işlemci mimarisi ve kesin disk gereksinimi için ayrı bir uyumluluk listesi henüz sağlanmadı.
+- Kaynak arşivindeki rehbere göre Windows 10/11 x64 ve yerleşik .NET Framework gerekir. Son kullanıcı için Python veya Node.js gerekmez.
 - EXE ve içerdiği araçların kurulumu için yeterli boş alan ayırın. Araç ve USB sürücüsü kurulumları Windows yönetici izni isteyebilir.
 - Karta program yükleyecekseniz EK-TM4C123GXL kartını veri aktarabilen bir USB kablosuyla bilgisayara bağlayın.
 
@@ -40,7 +40,7 @@ Diğer aygıt aileleri için CCS kurulumu seçilebilir. Otomatik örnek proje, d
 6. Kartı programlamaya hazır olduğunuzda DriverLib ayarlı RGB LED örneğini oluşturma, derleme ve yükleme akışını kullanın.
 7. Uygulamanın yükleme öncesi aldığı mevcut program yedeğini saklayın. Yükleme, kartın mevcut programını örnek programla değiştirir.
 
-Arayüz düğmelerinin birebir adları ve yedeklerin kaydedildiği kesin yol bu aktarımda doğrulanmadı; uygulamanın gösterdiği konumu takip edin.
+Kaynak rehberinde kurulum için **Start setup / Continue without board**, karta yükleme için **Flash board**, kayıt ve yedekler için **Tools → Logs and backups** seçenekleri açıklanır. Kartın **DEBUG USB** bağlantısını ve **POWER SELECT = DEBUG** ayarını kullanın. Kayıtlar ve yedekler `%LOCALAPPDATA%/TM4C-Ders-Kurulum/` altında tutulur; uygulamanın gösterdiği konumu takip edin.
 
 ## Dosya bütünlüğü
 
@@ -56,6 +56,17 @@ Get-FileHash -Algorithm SHA256 -LiteralPath '.\TivaSetup-3.4.exe'
 
 Özellik açıklamaları uygulama sahibinin sağladığı bilgilere dayanır. Dağıtım dosyasının Windows sürüm bilgisi **3.4.0.0** olarak okundu, dosya boyutu ve SHA-256 değeri kaydedildi. Bu yayın sırasında EXE çalıştırılmadı; araç kurulumu, proje derleme, kart yedekleme ve fiziksel karta yükleme testi yapılmadı.
 
-Bu klasör dağıtım paketidir; kaynak kod ve derleme otomasyonu henüz eklenmedi. Mevcut üçüncü taraf araçların lisans koşulları ilgili üreticilere aittir; bu depo onlar için yeni bir lisans tanımlamaz.
+## Kaynak kod ve geliştirme
+
+Kullanıcının sağladığı kaynak arşivi [source/](source/README.md) altında açılmıştır:
+
+- `source/otomatik-kurulum/`: C# arayüz ve uygulama kodu, çeviriler, yardım/lisans metinleri ve `build.py`.
+- `source/kurulum-kaydi/ilk_program_main.c`: RGB LED örneği.
+- `source/assets/`: Arşivde sağlanan gerçek ekran görüntüleri.
+- `source/TEST_RESULTS.txt`: Kaynak arşiviyle gelen önceki test kaydı; bu yayın sırasında yeniden çalıştırılmadı.
+
+Derleme adımları ve dışarıdan sağlanması gereken dört TI paketi [özgün kaynak README’sinde](source/README.md) açıklanır. Kaynak ZIP’i TI kurulum arşivlerini içermez; tam çevrimdışı EXE bunları içerir. Derleme, kurulum veya kart işlemleri bu aktarımda çalıştırılmadı.
+
+ Mevcut üçüncü taraf araçların lisans koşulları ilgili üreticilere aittir; bu depo onlar için yeni bir lisans tanımlamaz.
 
 [← TM4C123G deposu](../README.md)
