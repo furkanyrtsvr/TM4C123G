@@ -1,0 +1,9 @@
+{
+  "name": "Tiva Setup",
+  "version": "3.4.0",
+  "file": "TivaSetup-3.4.exe",
+  "size_bytes": 1549503524,
+  "sha256": "dc7ecad21d72263f418755fddeb28d3eff2a5f6cc3049f4580ea169dfd774313",
+  "tag": "tivasetup-v3.4.0",
+  "download_url": "https://github.com/furkanyrtsvr/TM4C123G/releases/download/tivasetup-v3.4.0/TivaSetup-3.4.exe"
+}

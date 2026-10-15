@@ -1,0 +1,8 @@
+*.exe
+*.msi
+*.zip
+*.bin
+*.hex
+*.out
+__pycache__/
+.env
